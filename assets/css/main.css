@@ -1389,7 +1389,7 @@
 
 		.image.featured {
 			display: block;
-			height: 100%;
+			width: 100%;
 			margin: 0 0 2em 0;
 		}
 
@@ -1810,6 +1810,7 @@
 					left: 1.75em;
 					top: 1.75em;
 					margin: -4.5em 0 4.25em -3.5em;
+					object-fit: cover;
 				}
 
 				.box.post header {
