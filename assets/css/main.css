@@ -1809,6 +1809,7 @@
 				.box .image.featured {
 					left: 1.75em;
 					top: 1.75em;
+					height: 260px;
 					margin: -4.5em 0 4.25em -3.5em;
 					object-fit: cover;
 				}
