@@ -1807,11 +1807,9 @@
 			}
 
 				.box .image.featured {
-					left: 100.75em;
-					top: 100.75em;
-					height: 260px;
+					left: 1.75em;
+					top: 1.75em;
 					margin: -4.5em 0 4.25em -3.5em;
-					object-fit: cover;
 				}
 
 				.box.post header {
