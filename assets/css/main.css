@@ -1382,7 +1382,7 @@
 			margin: 0 0 2em 0;
 		}
 
-			.image.centered img {
+			.image.centered img {/* <img>この中のみスタイルが適用されます</img> */
 				margin: 0 auto;
 				width: auto;
 			}
@@ -1391,6 +1391,7 @@
 			display: block;
 			width: 100%;
 			margin: 0 0 2em 0;
+			object-fit: cover;
 		}
 
 		.image.left {
