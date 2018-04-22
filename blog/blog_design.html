@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>記事タイトル</title>
+		<title><?php echo $post['title'] ?></title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -27,7 +27,7 @@
 						<nav id="nav">
 							<ul>
 								<li><a href="index.html">Home</a></li>
-								<li class="current">
+								<li>
 									<a href="#">Portfolio</a>
 									<ul>
 										<li><a href="#">Power measurement for mobile sensing</a></li>
@@ -46,7 +46,7 @@
 										<li><a href="#">Veroeros feugiat</a></li>
 									</ul>
 								</li>
-								<li><a href="left-sidebar.html">Blog</a></li>
+								<li class="current"><a href="#">Blog</a></li>
 							</ul>
 						</nav>
 
@@ -60,57 +60,16 @@
 							<div class="8u 12u(mobile)">
 
 								<!-- Content -->
+								<?php foreach ($posts as $post) { ?>
 									<article class="box post">
 										<a href="#" class="image featured"><img src="../images/pic01.jpg" alt="" /></a>
 										<header>
-											<h2>Power measurement <br> for mobile sensing</h2>
-											<p>This is a system that enables power measurement of smartphone.</p>
+											<h2><?php echo $post['title'] ?></h2>
+											<p>タイムスタンプ</p>
 										</header>
-										<p>
-											Vestibulum scelerisque ultricies libero id hendrerit. Vivamus malesuada quam faucibus ante dignissim auctor
-											hendrerit libero placerat. Nulla facilisi. Proin aliquam felis non arcu molestie at accumsan turpis commodo.
-											Proin elementum, nibh non egestas sodales, augue quam aliquet est, id egestas diam justo adipiscing ante.
-											Pellentesque tempus nulla non urna eleifend ut ultrices nisi faucibus.
-										</p>
-										<p>
-											Praesent a dolor leo. Duis in felis in tortor lobortis volutpat et pretium tellus. Vestibulum ac ante nisl,
-											a elementum odio. Duis semper risus et lectus commodo fringilla. Maecenas sagittis convallis justo vel mattis.
-											placerat, nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-											eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-											elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
-											sit amet nullam consequat feugiat dolore tempus.
-										</p>
-										<section>
-											<header>
-												<h3>Something else</h3>
-											</header>
-											<p>
-												Elementum odio duis semper risus et lectus commodo fringilla. Maecenas sagittis convallis justo vel mattis.
-												placerat, nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-												eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-												elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
-												sit amet nullam consequat feugiat dolore tempus.
-											</p>
-											<p>
-												Nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-												eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-												elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
-												sit amet nullam consequat feugiat dolore tempus.
-											</p>
-										</section>
-										<section>
-											<header>
-												<h3>So in conclusion ...</h3>
-											</header>
-											<p>
-												Nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-												eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-												elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
-												sit amet nullam consequat feugiat dolore tempus. Elementum odio duis semper risus et lectus commodo fringilla.
-												Maecenas sagittis convallis justo vel mattis.
-											</p>
-										</section>
+										<p><?php echo nl2br($post['content']) ?></p>
 									</article>
+								<?php } ?>
 
 							</div>
 							<div class="4u 12u(mobile)">
