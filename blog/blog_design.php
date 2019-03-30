@@ -40,7 +40,6 @@
 												<li><a href="#">Etiam dolore nisl</a></li>
 												<li><a href="#">Veroeros feugiat</a></li>
 												<li><a href="#">Nisl sed aliquam</a></li>
-												<li><a href="#">Dolore adipiscing</a></li>
 											</ul>
 										</li>
 										<li><a href="#">Veroeros feugiat</a></li>
