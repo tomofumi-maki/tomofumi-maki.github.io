@@ -380,8 +380,10 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-			<script src="assets/js/smooth-scroll.polyfills.min.js">
-				var scroll = new SmoothScroll('a[href*="#"]');
+			<script src="assets/js/smooth-scroll.polyfills.min.js"></script>
+			<script>
+				// Instantiate Scrolls
+				var scroll = new SmoothScroll('a[href*="#"]:not([data-easing])');
 			</script>
 
 	</body>
